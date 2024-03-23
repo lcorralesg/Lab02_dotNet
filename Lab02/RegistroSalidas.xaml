@@ -1,0 +1,88 @@
+﻿<Window x:Class="Lab02.RegistroSalidas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab02"
+        mc:Ignorable="d"
+        Title="RegistroSalidas" Height="550" Width="340">
+    <Grid>
+        <StackPanel>
+            <Label Content="Registro de Salidas" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Label Content="Tipo de Documento" Width="150"/>
+                    <ComboBox Width="150" Name="cbTipoDocumento">
+                        <ComboBoxItem Content="DNI"/>
+                        <ComboBoxItem Content="RUC"/>
+                        <ComboBoxItem Content="Pasaporte"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Label Content="Numero de Documento" Width="150"/>
+                    <TextBox Width="150" Name="txtNumeroDocumento"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Label Content="Peso" Width="150"/>
+                    <TextBox Width="150" Name="txtPeso"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Label Content="Tipo de Auto" Width="150"/>
+                    <ComboBox Width="150" Name="cbTipoAuto">
+                        <ComboBoxItem Content="Auto"/>
+                        <ComboBoxItem Content="Camion"/>
+                        <ComboBoxItem Content="Moto"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Label Content="Nombre del Transportista" Width="150"/>
+                    <TextBox Width="150" Name="txtNombreTransportista"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Label Content="Fecha y Hora" Width="150"/>
+                    <StackPanel Orientation="Vertical">
+                        <DatePicker Width="150" Name="dpFechaHora"/>
+                        <ComboBox Width="150" Name="cbHora" Margin="0,10,0,0">
+                            <ComboBoxItem Content="00:00"/>
+                            <ComboBoxItem Content="01:00"/>
+                            <ComboBoxItem Content="02:00"/>
+                            <ComboBoxItem Content="03:00"/>
+                            <ComboBoxItem Content="04:00"/>
+                            <ComboBoxItem Content="05:00"/>
+                            <ComboBoxItem Content="06:00"/>
+                            <ComboBoxItem Content="07:00"/>
+                            <ComboBoxItem Content="08:00"/>
+                            <ComboBoxItem Content="09:00"/>
+                            <ComboBoxItem Content="10:00"/>
+                            <ComboBoxItem Content="11:00"/>
+                            <ComboBoxItem Content="12:00"/>
+                            <ComboBoxItem Content="13:00"/>
+                            <ComboBoxItem Content="14:00"/>
+                            <ComboBoxItem Content="15:00"/>
+                            <ComboBoxItem Content="16:00"/>
+                            <ComboBoxItem Content="17:00"/>
+                            <ComboBoxItem Content="18:00"/>
+                            <ComboBoxItem Content="19:00"/>
+                            <ComboBoxItem Content="20:00"/>
+                            <ComboBoxItem Content="21:00"/>
+                            <ComboBoxItem Content="22:00"/>
+                            <ComboBoxItem Content="23:00"/>
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Label Content="Peso de Ingreso" Width="150"/>
+                    <TextBox Width="150" Name="txtPesoIngreso"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Label Content="Peso de Salida" Width="150"/>
+                    <TextBox Width="150" Name="txtPesoSalida"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Button Content="Registrar" Width="150" Click="Button_Click"/>
+                <Button Content="Cancelar" Width="150" Click="Button_Click_1"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
